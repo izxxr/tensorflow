@@ -34,6 +34,7 @@ _dtensor_singleton_lock = threading.Lock()
 # Main methods to launch DTensor computations.
 
 
+
 @tf_export("experimental.dtensor.call_with_layout", v1=[])
 def call_with_layout(fn: Callable[...,
                                   Any], layout: Optional[layout_lib.Layout],
